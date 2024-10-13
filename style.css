@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 17px;
+  font-family: "Hanken Grotesk";
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff1fd;
+}
+
+.all {
+  height: 63vh;
+  width: 51vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 1.5em;
+  margin-top: 1.4rem;
+}
+
+.container1 {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(0deg, #2e2be9 47%, hsla(252, 100%, 67%, 1) 90%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 2em 2.4em;
+  border-radius: 2em;
+}
+
+.resultIndicator div {
+  margin-bottom: 1.2em;
+  color: rgb(255 255 255 / 0.8);
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.result {
+  background-image: linear-gradient(
+    rgba(48, 29, 100, 0.562),
+    hsla(256, 72%, 46%, 0.178)
+  );
+
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.result:hover {
+  transform: scale(1.1);
+}
+.result span {
+  display: block;
+}
+.resultPoint {
+  font-size: 4.3em;
+  font-weight: bold;
+  margin-bottom: 0.1em;
+}
+.resultTotal {
+  text-align: center;
+  opacity: 0.4;
+}
+.resultAnalyze {
+  margin-top: 0.7rem;
+  margin-bottom: 0.6em;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.resultSubtitles {
+  font-weight: normal;
+  opacity: 0.7;
+  font-size: 1em;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.resultSubtitles div {
+  font-size: 17px;
+  width: 80%;
+  margin: auto;
+}
+
+.resultIndicator,
+.resultSubtitles {
+  font-size: 1.125em;
+  text-align: center;
+}
+/*  */
+
+.container2 {
+  width: 50%;
+  height: 100%;
+  padding: 2.2rem;
+  padding-left: 2.4rem;
+}
+.summary {
+  font-size: 1.4em;
+  margin-bottom: 1.2em;
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+}
+
+.points {
+  margin-top: 1rem;
+  margin-bottom: 2.6rem;
+}
+
+.points .listPoint {
+  padding: 0.9em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  border-radius: 0.6em;
+  font-weight: bold;
+}
+.points .reaction {
+  background-color: hsla(0, 100%, 67%, 0.072);
+  color: hsl(0, 100%, 67%);
+}
+.points .memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39 100% 56% / 0.08);
+}
+.points .verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166 100% 37% / 0.09);
+}
+.points .visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(241 81% 54% / 0.08);
+}
+.points .pointsValue {
+  color: rgb(0 0 0/ 0.4);
+  font-weight: bold;
+}
+.points .summaryPoint {
+  color: rgb(0 0 0);
+}
+.points_identify {
+  display: flex;
+  gap: 0.4em;
+}
+.continue-btn {
+  text-align: center;
+  font-weight: bold;
+  padding: 1em;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  border-radius: 2em;
+  display: block;
+}
+
+.continue-btn:hover {
+  background: #2e2be9;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+/*  */
+
+@media screen and (width <= 55.5em) {
+  .all {
+    height: auto;
+    width: 100%;
+    display: block;
+    justify-content: initial;
+    align-items: initial;
+    margin-top: 4rem;
+  }
+  .container1 {
+    width: 100%;
+    color: white;
+    padding: 2em 2em 2.4em;
+    border-radius: 0 0 2.4em 2.4em;
+    margin-top: 6rem;
+  }
+
+  .result {
+    width: 9em;
+    height: 9em;
+  }
+
+  .resultPoint {
+    font-size: 3em;
+  }
+
+  .resultAnalyze {
+    margin-bottom: 0.4em;
+  }
+
+  .resultSubtitles {
+    width: 100%;
+  }
+
+  .container2 {
+    padding: 0 1.8em;
+    width: 100%;
+  }
+  .summary {
+    font-size: 1.7em;
+    margin: 0.7em 0;
+  }
+  .points .listPoint {
+    margin-bottom: 0.6em;
+    border-radius: 0.6em;
+  }
+
+  .continue-btn {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}
