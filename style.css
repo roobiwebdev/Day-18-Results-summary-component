@@ -17,8 +17,8 @@ body {
 }
 
 .all {
-  height: 45vh;
-  width: 51vw;
+  height: 32rem;
+  width: 46rem;
   display: flex;
   justify-content: center;
   align-items: center;
